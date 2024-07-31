@@ -5,6 +5,7 @@ import dotenv
 from pathlib import Path
 import glob
 
+
 class Email_Sender:
     def __init__(self, sender_email, sender_name, password, delay=2):
         self.__sender_email = sender_email
@@ -30,7 +31,6 @@ class Email_Sender:
         
     def send_email(self):
         yag = yagmail.SMTP(user={self.__sender_email: self.__sender_name}, password=self.__password)
-        
         if self.__receiver_email_list == [""]:
             print("No receiver email!")
         else:
@@ -44,6 +44,7 @@ class Email_Sender:
                 time.sleep(self.__delay)
             print("Email sent successfully!")
     
+
 def main():
     env_path = dotenv.find_dotenv()
     dotenv.load_dotenv(env_path)
@@ -63,8 +64,8 @@ def main():
     email_bot = Email_Sender(sender_email, sender_name, password)
     email_bot.set_mail(subject=subject, content=content)
     email_bot.set_receiver_email(receiver_email_list)
-    
     email_bot.send_email()
     
+
 if __name__ == '__main__':
     main()

@@ -23,7 +23,7 @@ To use this tool, you need to have Python installed on your machine. You can ins
    ```
    pip install -r requirements.txt
    ```
-4. Update the `.env` file with your email details and your email credentials. (Serch "Gmail app password" for more information)
+4. Change `.env.example` to `.env`. Update the `.env` file with your email details and your email credentials. (Serch "Gmail app password" for more information)
    For example:
    ```
    SENDER_EMAIL = "yourEmail@example.com"
