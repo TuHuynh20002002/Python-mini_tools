@@ -25,7 +25,7 @@ To use this tool, you need to have Python installed on your machine. You can ins
 
 3. Install the required dependencies by running the following command:
    ```bash
-   pip install -r requirements.txt
+   pip3 install -r ./requirements.txt
    ```
 
 4. Change `.env.example` to `.env`. Update the `.env` file with your email details and your email credentials. (Serch "Gmail app password" for more information). For example:
@@ -49,7 +49,7 @@ To use this tool, you need to have Python installed on your machine. You can ins
 
 8. Run the tool by executing the following command:
    ```bash
-   python ./main.py
+   python3 ./main.py
    ```
 
 
