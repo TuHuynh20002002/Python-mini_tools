@@ -24,6 +24,9 @@ To use this tool, you need to have Python installed on your machine. You can ins
    ```
 
 3. Install the required dependencies by running the following command:
+   <br>
+   <i>&nbsp;**(If you are using Windows, use <b>pip</b> instead of <b>pip3</b>)&nbsp;</i>
+
    ```bash
    pip3 install -r ./requirements.txt
    ```
@@ -48,6 +51,9 @@ To use this tool, you need to have Python installed on your machine. You can ins
 7. Write your Suject and Content in `main.py`. _(If your content is a little bit long, write your content in a new file and modify the code to import it.)_
 
 8. Run the tool by executing the following command:
+   <br>
+   <i>&nbsp;**(If you are using Windows, use <b>python</b> instead of <b>python3</b>)&nbsp;</i>
+
    ```bash
    python3 ./main.py
    ```
